@@ -26,7 +26,7 @@ public struct State: Decodable {
       self.cities = [city]
     }
     
-    self.name = try container.decode(String.self, forKey: .name)
-    self.code = try container.decode(String.self, forKey: .code)
+    self.name = try? container.decode(String.self, forKey: .name)
+    self.code = try? container.decode(String.self, forKey: .code)
   }
 }

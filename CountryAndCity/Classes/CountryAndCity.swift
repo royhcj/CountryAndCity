@@ -46,8 +46,8 @@ public class CountryAndCity {
   // Load Methods
   public func loadDefaultData(asyncCompletion: (() -> Void)?) {
     let bundle = Bundle(for: CountryAndCity.self)
-    let url = bundle.url(forResource: "countryCity_en",
-                         withExtension: "txt")
+    let url = bundle.url(forResource: "countryCity",
+                         withExtension: "json")
     if let url = url,
        let data = try? Data(contentsOf: url) {
       load(jsonData: data, asyncCompletion: asyncCompletion)
