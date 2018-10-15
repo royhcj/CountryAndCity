@@ -1,0 +1,6 @@
+framework module CountryAndCity {
+  umbrella header "CountryAndCity-umbrella.h"
+
+  export *
+  module * { export * }
+}

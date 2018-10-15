@@ -7,18 +7,30 @@
 //
 
 import UIKit
+import CountryAndCity
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    
+    
+    
+  }
+  @IBAction func clickedLoadJSONData(_ sender: Any) {
+    if let url = Bundle.main.url(forResource: "countryCity_en", withExtension: "txt"),
+      let data = try? Data.init(contentsOf: url) {
+      
+      if CountryAndCity.shared.load(jsonData: data) {
+        print(CountryAndCity.shared)
+      }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+  }
+  
 }
+
 

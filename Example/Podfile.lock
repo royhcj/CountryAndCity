@@ -1,0 +1,16 @@
+PODS:
+  - CountryAndCity (0.1.0)
+
+DEPENDENCIES:
+  - CountryAndCity (from `../`)
+
+EXTERNAL SOURCES:
+  CountryAndCity:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CountryAndCity: 72e2543ce016ec8d010c623c8982fb76ec3eb2ad
+
+PODFILE CHECKSUM: c987c238667191fc0b1d6d935d48372fbe4e2f14
+
+COCOAPODS: 1.5.3
