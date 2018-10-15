@@ -13,7 +13,6 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		7272DFE821743ADB00254FA4 /* countryCity_en.txt in Resources */ = {isa = PBXBuildFile; fileRef = 72CC71672174308F00718385 /* countryCity_en.txt */; };
 		7FF9785C48CF5B751F05F0A6 /* Pods_CountryAndCity_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69FBD7ECEC1C597B80780BD9 /* Pods_CountryAndCity_Tests.framework */; };
 		FFE07B2FCC2BACD8DE86137B /* Pods_CountryAndCity_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B47D634878FAA6C19D9EB34 /* Pods_CountryAndCity_Example.framework */; };
 /* End PBXBuildFile section */
@@ -45,8 +44,6 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		69FBD7ECEC1C597B80780BD9 /* Pods_CountryAndCity_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CountryAndCity_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D848496D8F01522693CC04E /* CountryAndCity.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CountryAndCity.podspec; path = ../CountryAndCity.podspec; sourceTree = "<group>"; };
-		7272DFEB21743F8200254FA4 /* countryCity_en copy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "countryCity_en copy.txt"; sourceTree = "<group>"; };
-		72CC71672174308F00718385 /* countryCity_en.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = countryCity_en.txt; sourceTree = "<group>"; };
 		9D38D04C73A240DA354B9851 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D9055E79526AB26A8D589D8D /* Pods-CountryAndCity_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountryAndCity_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CountryAndCity_Tests/Pods-CountryAndCity_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D9508459053C58DAA776DEDC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -102,7 +99,6 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
-				72CC71672174308F00718385 /* countryCity_en.txt */,
 			);
 			name = "Example for CountryAndCity";
 			path = CountryAndCity;
@@ -111,7 +107,6 @@
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7272DFEB21743F8200254FA4 /* countryCity_en copy.txt */,
 				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -250,7 +245,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7272DFE821743ADB00254FA4 /* countryCity_en.txt in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,

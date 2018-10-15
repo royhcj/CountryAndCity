@@ -11,6 +11,7 @@
 		3378277D6BE03BB2D9009740A9624C13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		4E9E98B717DF91B5470C264CB80C881F /* CountryAndCity-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94F9668A10105C0E55E9CEC2EEBC4 /* CountryAndCity-dummy.m */; };
 		7272DFEA21743B5B00254FA4 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7272DFE921743B5B00254FA4 /* World.swift */; };
+		7272DFF52174716100254FA4 /* countryCity_en.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7272DFF32174716100254FA4 /* countryCity_en.txt */; };
 		8071EA7B4552567525B39F0D562186E9 /* CountryAndCity-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E2E1F506514429830CFE60E4A59B525 /* CountryAndCity-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82997A1637C91FB1D829265D87115F3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		8D4AB00D2751920DE04C7AC71C30FDD2 /* Pods-CountryAndCity_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD628016C3DEA8361C9BBE51C1ED7405 /* Pods-CountryAndCity_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -57,6 +58,7 @@
 		6CAA74C97330F1328D7C92B28EBE7D1B /* Pods-CountryAndCity_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CountryAndCity_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6DF0AEA1D410FB5087131EB4541D5352 /* Pods-CountryAndCity_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CountryAndCity_Example.release.xcconfig"; sourceTree = "<group>"; };
 		7272DFE921743B5B00254FA4 /* World.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = World.swift; path = CountryAndCity/Classes/World.swift; sourceTree = "<group>"; };
+		7272DFF32174716100254FA4 /* countryCity_en.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = countryCity_en.txt; sourceTree = "<group>"; };
 		790F1203B260734933B675CD5F196F1C /* Pods_CountryAndCity_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CountryAndCity_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89C94F9668A10105C0E55E9CEC2EEBC4 /* CountryAndCity-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CountryAndCity-dummy.m"; sourceTree = "<group>"; };
 		8BF33B72098822DA0F7E566E1A7F6FAB /* Pods-CountryAndCity_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CountryAndCity_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 		374B01D549066E3C0BCE28429665D393 /* CountryAndCity */ = {
 			isa = PBXGroup;
 			children = (
+				7272DFF12174716100254FA4 /* Assets */,
 				7272DFE921743B5B00254FA4 /* World.swift */,
 				967A887D90E695B9FBDACBA5F61FB502 /* City.swift */,
 				E575FB321A701AE571EF76FEA4C94DAE /* Country.swift */,
@@ -161,6 +164,15 @@
 				1B2EFE6C18725B9E6B1085D6F1F34908 /* Pods-CountryAndCity_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7272DFF12174716100254FA4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7272DFF32174716100254FA4 /* countryCity_en.txt */,
+			);
+			name = Assets;
+			path = CountryAndCity/Assets;
 			sourceTree = "<group>";
 		};
 		79FC840D4DA20E25F2453380FFC2BAD2 /* Pods-CountryAndCity_Example */ = {
@@ -368,6 +380,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7272DFF52174716100254FA4 /* countryCity_en.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

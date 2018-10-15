@@ -22,13 +22,7 @@ class ViewController: UIViewController {
     
   }
   @IBAction func clickedLoadJSONData(_ sender: Any) {
-    if let url = Bundle.main.url(forResource: "countryCity_en", withExtension: "txt"),
-      let data = try? Data.init(contentsOf: url) {
-      
-      if CountryAndCity.shared.load(jsonData: data) {
-        print(CountryAndCity.shared)
-      }
-    }
+    print(CountryAndCity.shared.countries)
   }
   
 }
