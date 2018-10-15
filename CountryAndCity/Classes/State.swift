@@ -8,9 +8,13 @@
 import Foundation
 
 public struct State: Decodable {
+  public var name: String?
+  public var code: String?
   public var cities: [City]?
 
   enum CodingKeys: String, CodingKey {
+    case name = "Name"
+    case code = "Code"
     case cities = "City"
   }
   
@@ -21,5 +25,8 @@ public struct State: Decodable {
     } else if let city = try? container.decode(City.self, forKey: .cities) {
       self.cities = [city]
     }
+    
+    self.name = try container.decode(String.self, forKey: .name)
+    self.code = try container.decode(String.self, forKey: .code)
   }
 }

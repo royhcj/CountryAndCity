@@ -17,14 +17,17 @@ class ViewController: UIViewController {
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-    
-    
-    
-  }
-  @IBAction func clickedLoadJSONData(_ sender: Any) {
-    print(CountryAndCity.shared.countries)
   }
   
+  @IBAction func clickedLoadJSONData(_ sender: Any) {
+    CountryAndCity.shared.fetchCountries { countries in
+      print(countries.count)
+      
+      CountryAndCity.shared.fetchCities(for: "CHE", completion: { cities in
+        print("Cities in CHE: \(cities.count)")
+      })
+    }
+  }
 }
 
 
