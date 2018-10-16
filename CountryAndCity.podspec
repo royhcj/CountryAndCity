@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  Get a list of countries and their corresponding cities on our awesome planet, in Swift.
                        DESC
 
   s.homepage         = 'https://github.com/royhcj/CountryAndCity'
