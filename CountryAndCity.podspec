@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CountryAndCity'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Get a list of countries and their corresponding cities on our awesome planet, in Swift.'
 
 # This description is used to generate tags and improve search results.
@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
   Get a list of countries and their corresponding cities on our awesome planet, in Swift.
+  Data are retrieved from this respository: https://github.com/pluwen/World-Cities
                        DESC
 
   s.homepage         = 'https://github.com/royhcj/CountryAndCity'
