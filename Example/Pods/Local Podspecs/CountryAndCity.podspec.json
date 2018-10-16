@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "summary": "A short description of CountryAndCity.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/boyroyh@gmail.com/CountryAndCity",
+  "homepage": "https://github.com/royhcj/CountryAndCity",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,16 @@
     "boyroyh@gmail.com": "boyroyh@gmail.com"
   },
   "source": {
-    "git": "https://github.com/boyroyh@gmail.com/CountryAndCity.git",
+    "git": "https://github.com/royhcj/CountryAndCity.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "CountryAndCity/Classes/**/*"
+  "source_files": "CountryAndCity/Classes/**/*",
+  "resource_bundles": {
+    "CountryAndCity": [
+      "CountryAndCity/Assets/**/*"
+    ]
+  }
 }
