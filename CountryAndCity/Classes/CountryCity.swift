@@ -1,15 +1,15 @@
 //
-//  CountryAndCity.swift
-//  CountryAndCity
+//  CountryCity.swift
+//  CountryCity
 //
 //  Created by Roy Hu on 2018/10/15.
 //
 
 import Foundation
 
-public class CountryAndCity {
+public class CountryCity {
   
-  public static var shared = CountryAndCity()
+  public static var shared = CountryCity()
   
   // Fetch Functions
   public func fetchCountries(completion: @escaping ([Country]) -> Void) {
@@ -45,7 +45,7 @@ public class CountryAndCity {
   
   // Load Methods
   public func loadDefaultData(asyncCompletion: (() -> Void)?) {
-    let bundle = Bundle(for: CountryAndCity.self)
+    let bundle = Bundle(for: CountryCity.self)
     let url = bundle.url(forResource: "countryCity",
                          withExtension: "json")
     if let url = url,
