@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol LocalizationDelegate: class {
-  
+public protocol LocalizationDelegate: class {
+  func localizedURL(for file: String, extension: String, bundle: Bundle) -> URL?
 }
