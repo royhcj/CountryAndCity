@@ -11,7 +11,6 @@
 		3378277D6BE03BB2D9009740A9624C13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		4E9E98B717DF91B5470C264CB80C881F /* CountryAndCity-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C94F9668A10105C0E55E9CEC2EEBC4 /* CountryAndCity-dummy.m */; };
 		7272DFEA21743B5B00254FA4 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7272DFE921743B5B00254FA4 /* World.swift */; };
-		7272E001217492B900254FA4 /* LocalizationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7272E000217492B900254FA4 /* LocalizationDelegate.swift */; };
 		7272E006217497DA00254FA4 /* CountryAndCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7272E005217497DA00254FA4 /* CountryAndCity.swift */; };
 		7272E00921749A4800254FA4 /* countryCity.json in Resources */ = {isa = PBXBuildFile; fileRef = 7272E00B21749A4800254FA4 /* countryCity.json */; };
 		8071EA7B4552567525B39F0D562186E9 /* CountryAndCity-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E2E1F506514429830CFE60E4A59B525 /* CountryAndCity-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -58,7 +57,6 @@
 		6CAA74C97330F1328D7C92B28EBE7D1B /* Pods-CountryAndCity_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CountryAndCity_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6DF0AEA1D410FB5087131EB4541D5352 /* Pods-CountryAndCity_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CountryAndCity_Example.release.xcconfig"; sourceTree = "<group>"; };
 		7272DFE921743B5B00254FA4 /* World.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = World.swift; path = CountryAndCity/Classes/World.swift; sourceTree = "<group>"; };
-		7272E000217492B900254FA4 /* LocalizationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalizationDelegate.swift; path = CountryAndCity/Classes/LocalizationDelegate.swift; sourceTree = "<group>"; };
 		7272E005217497DA00254FA4 /* CountryAndCity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountryAndCity.swift; path = CountryAndCity/Classes/CountryAndCity.swift; sourceTree = "<group>"; };
 		7272E00A21749A4800254FA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/countryCity.json; sourceTree = "<group>"; };
 		7272E00C21749AD000254FA4 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "zh-Hant"; path = "zh-Hant.lproj/countryCity.json"; sourceTree = "<group>"; };
@@ -150,7 +148,6 @@
 				E575FB321A701AE571EF76FEA4C94DAE /* Country.swift */,
 				68F48419331FBF1FF1FCE3A4080356E9 /* State.swift */,
 				967A887D90E695B9FBDACBA5F61FB502 /* City.swift */,
-				7272E000217492B900254FA4 /* LocalizationDelegate.swift */,
 				8DE74121824EB5E6CCD86C947C0D3DC5 /* Pod */,
 				8A19D256E5E5389D30CCA77E8645A075 /* Support Files */,
 			);
@@ -430,7 +427,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				944E6E00C2DE016CAF8C7E0552F1CB08 /* City.swift in Sources */,
-				7272E001217492B900254FA4 /* LocalizationDelegate.swift in Sources */,
 				AEE9060F2AACE36642698B948572E0E9 /* Country.swift in Sources */,
 				4E9E98B717DF91B5470C264CB80C881F /* CountryAndCity-dummy.m in Sources */,
 				9CB6D07ADCA06BAE319EC5AB9C95BD60 /* Location.swift in Sources */,

@@ -11,8 +11,6 @@ public class CountryAndCity {
   
   public static var shared = CountryAndCity()
   
-  public weak var localizationDelegate: LocalizationDelegate?
-  
   // Fetch Functions
   public func fetchCountries(completion: @escaping ([Country]) -> Void) {
     if let countries = self.countries {
@@ -48,15 +46,8 @@ public class CountryAndCity {
   // Load Methods
   public func loadDefaultData(asyncCompletion: (() -> Void)?) {
     let bundle = Bundle(for: CountryAndCity.self)
-    var url: URL?
-    if localizationDelegate != nil {
-      url = localizationDelegate?.localizedURL(for: "countryCity",
-                                               extension: "json",
-                                               bundle: bundle)
-    } else {
-      url = bundle.url(forResource: "countryCity",
-                       withExtension: "json")
-    }
+    let url = bundle.url(forResource: "countryCity",
+                         withExtension: "json")
     if let url = url,
        let data = try? Data(contentsOf: url) {
       load(jsonData: data, asyncCompletion: asyncCompletion)

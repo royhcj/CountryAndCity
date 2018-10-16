@@ -9,18 +9,8 @@
 import UIKit
 import CountryAndCity
 
-class ViewController: UIViewController, LocalizationDelegate {
-  
-  func localizedURL(for file: String, extension fileExtension: String, bundle: Bundle) -> URL? {
-    guard let subBundleName = bundle.infoDictionary?["CFBundleExecutable"] as? String,
-          let subBundleURL = Bundle.main.resourceURL?.appendingPathComponent(
-                                "Frameworks/\(subBundleName).framework"),
-          let subBundle = Bundle(url: subBundleURL)
-    else { return nil }
-    return subBundle.url(forResource: file, withExtension: fileExtension)
-  }
-  
-  override func viewDidLoad() {
+class ViewController: UIViewController {
+    override func viewDidLoad() {
     super.viewDidLoad()
   }
   
@@ -29,8 +19,6 @@ class ViewController: UIViewController, LocalizationDelegate {
   }
   
   @IBAction func clickedLoadJSONData(_ sender: Any) {
-    //CountryAndCity.shared.localizationDelegate = self
-    
     CountryAndCity.shared.fetchCountries { countries in
       print(countries.count)
       
