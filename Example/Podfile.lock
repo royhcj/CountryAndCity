@@ -1,5 +1,5 @@
 PODS:
-  - CountryAndCity (0.1.2)
+  - CountryAndCity (0.1.3)
 
 DEPENDENCIES:
   - CountryAndCity (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CountryAndCity: d6a5909bad35e2d39ee4d56cf21caa016c48e0be
+  CountryAndCity: 41fa3574069419184b7fbc6e819906d6d82de80e
 
 PODFILE CHECKSUM: c987c238667191fc0b1d6d935d48372fbe4e2f14
 
