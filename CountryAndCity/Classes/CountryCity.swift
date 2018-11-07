@@ -10,6 +10,7 @@ import Foundation
 public class CountryCity {
   
   public static var shared = CountryCity()
+  public static var languageCode: String?
   
   // Fetch Functions
   public func fetchCountries(completion: @escaping ([Country]) -> Void) {
@@ -19,6 +20,8 @@ public class CountryCity {
       loadDefaultData {
         if let countries = self.countries {
           completion(countries)
+        } else {
+          completion([])
         }
       }
     }
@@ -46,11 +49,19 @@ public class CountryCity {
   // Load Methods
   public func loadDefaultData(asyncCompletion: (() -> Void)?) {
     let bundle = Bundle(for: CountryCity.self)
-    let url = bundle.url(forResource: "countryCity",
-                         withExtension: "json")
+    var url: URL?
+    if let languageCode = CountryCity.languageCode {
+      url = bundle.resourceURL?.appendingPathComponent(
+                                "\(languageCode).lproj/countryCity.json")
+    } else {
+      url = bundle.url(forResource: "countryCity",
+                       withExtension: "json")
+    }
     if let url = url,
        let data = try? Data(contentsOf: url) {
       load(jsonData: data, asyncCompletion: asyncCompletion)
+    } else {
+      asyncCompletion?()
     }
   }
   
