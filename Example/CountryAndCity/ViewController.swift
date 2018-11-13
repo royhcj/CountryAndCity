@@ -19,6 +19,7 @@ class ViewController: UIViewController {
   }
   
   @IBAction func clickedLoadJSONData(_ sender: Any) {
+    CountryCity.languageCode = "zh-Hant"
     CountryCity.shared.fetchCountries { countries in
       print(countries.count)
       

@@ -53,7 +53,8 @@ public class CountryCity {
     if let languageCode = CountryCity.languageCode {
       url = bundle.resourceURL?.appendingPathComponent(
                                 "\(languageCode).lproj/countryCity.json")
-    } else {
+    }
+    if url == nil || !FileManager.default.fileExists(atPath: url?.path ?? "") {
       url = bundle.url(forResource: "countryCity",
                        withExtension: "json")
     }
